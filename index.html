@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>room-reservation</title>
+</head>
+
+<body>
+    <div class="mx-3">
+        <h1 figure class="text-center">ROOM RESERVATION APP</h1>
+
+        <div id="showingAlert"></div>
+
+        <form id="reservationForm" class="mb-3">
+
+            <div class="py-2">
+                <label class="form-label">Name</label>
+                <input type="text" id="guestName" class="form-control" />
+            </div>
+
+            <div class="py-2">
+                <label class="form-label">Room Number</label>
+                <input type="number" id="roomNumber" class="form-control" />
+            </div>
+
+            <div class="py-2">
+                <label class="form-label">Check In Date</label>
+                <input type="date" id="checkInDate" class="form-control" />
+            </div>
+
+            <div class="py-2">
+                <label class="form-label">Check Out Date</label>
+                <input type="date" id="checkOutDate" class="form-control" />
+            </div>
+
+           <div class="mt-2">
+            <button id="addBtn" type="submit" class="btn btn-primary">
+                Add Reservation
+            </button>
+           </div>
+
+        </form>
+
+        <h2>Reservations</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Guest Name</th>
+                <th>Room Number</th>
+                <th>Check In Date</th>
+                <th>Check Out Date</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="reservationList">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/room-reservation.js"></script>
+</body>
+
+</html>
